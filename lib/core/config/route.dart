@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:poke_app/core/config/route_names.dart';
+import 'package:poke_app/features/home/presentation/screen/home_screen.dart';
 import 'package:poke_app/main.dart';
 
 class MyRouter {
@@ -13,7 +14,7 @@ class MyRouter {
 
     switch (settings.name) {
       case RouteNames.home:
-        screenDestination = (_) => const MyApp();
+        screenDestination = (_) => const HomeScreen();
         break;
       default:
         screenDestination = (_) => const MyApp();

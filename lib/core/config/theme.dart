@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Palette {
   /// GENERATE SHADE AND TINT LINK : https://maketintsandshades.com/
@@ -139,81 +140,96 @@ class CustomTheme {
     shadow: Colors.black87,
   );
 
-  static const TextTheme textTheme = TextTheme(
-    displayLarge: TextStyle(
-        fontSize: 57,
-        fontWeight: FontWeight.w400,
-        height: 1.123,
-        letterSpacing: 0),
-    displayMedium: TextStyle(
-        fontSize: 45,
-        fontWeight: FontWeight.w400,
-        height: 1.55,
-        letterSpacing: 0),
-    displaySmall: TextStyle(
-        fontSize: 36,
-        fontWeight: FontWeight.w400,
-        height: 1.22,
-        letterSpacing: 0),
-    headlineLarge: TextStyle(
-        fontSize: 32,
-        fontWeight: FontWeight.w400,
-        height: 1.25,
-        letterSpacing: 0),
-    headlineMedium: TextStyle(
-        fontSize: 28,
-        fontWeight: FontWeight.w400,
-        height: 1.2857,
-        letterSpacing: 0),
-    headlineSmall: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.w400,
-        height: 1.33,
-        letterSpacing: 0),
-    titleLarge: TextStyle(
-        fontSize: 22,
-        fontWeight: FontWeight.w500,
-        height: 1.2727,
-        letterSpacing: 0),
-    titleMedium: TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w500,
-        height: 1.5,
-        letterSpacing: 0.15),
-    titleSmall: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        height: 1.42857,
-        letterSpacing: 0.1),
-    labelLarge: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        height: 1.42857,
-        letterSpacing: 0.1),
-    labelMedium: TextStyle(
-        fontSize: 12,
-        fontWeight: FontWeight.w500,
-        height: 1.33,
-        letterSpacing: 0.5),
-    labelSmall: TextStyle(
-        fontSize: 11,
-        fontWeight: FontWeight.w500,
-        height: 1.4545,
-        letterSpacing: 0.5),
-    bodyLarge: TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w400,
-        height: 1.5,
-        letterSpacing: 0.15),
-    bodyMedium: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.w400,
-        height: 1.42857,
-        letterSpacing: 0.25),
-    bodySmall: TextStyle(
-        fontSize: 12,
-        fontWeight: FontWeight.w400,
-        height: 1.33,
-        letterSpacing: 0.4),
+  static TextTheme textTheme = TextTheme(
+    displayLarge: GoogleFonts.plusJakartaSans(
+      fontSize: 57,
+      fontWeight: FontWeight.w400,
+      height: 1.123,
+      letterSpacing: 0,
+    ),
+    displayMedium: GoogleFonts.plusJakartaSans(
+      fontSize: 45,
+      fontWeight: FontWeight.w400,
+      height: 1.55,
+      letterSpacing: 0,
+    ),
+    displaySmall: GoogleFonts.plusJakartaSans(
+      fontSize: 36,
+      fontWeight: FontWeight.w400,
+      height: 1.22,
+      letterSpacing: 0,
+    ),
+    headlineLarge: GoogleFonts.plusJakartaSans(
+      fontSize: 32,
+      fontWeight: FontWeight.w400,
+      height: 1.25,
+      letterSpacing: 0,
+    ),
+    headlineMedium: GoogleFonts.plusJakartaSans(
+      fontSize: 28,
+      fontWeight: FontWeight.w400,
+      height: 1.2857,
+      letterSpacing: 0,
+    ),
+    headlineSmall: GoogleFonts.plusJakartaSans(
+      fontSize: 24,
+      fontWeight: FontWeight.w400,
+      height: 1.33,
+      letterSpacing: 0,
+    ),
+    titleLarge: GoogleFonts.plusJakartaSans(
+      fontSize: 22,
+      fontWeight: FontWeight.w500,
+      height: 1.2727,
+      letterSpacing: 0,
+    ),
+    titleMedium: GoogleFonts.plusJakartaSans(
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      height: 1.5,
+      letterSpacing: 0.15,
+    ),
+    titleSmall: GoogleFonts.plusJakartaSans(
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      height: 1.42857,
+      letterSpacing: 0.1,
+    ),
+    labelLarge: GoogleFonts.plusJakartaSans(
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      height: 1.42857,
+      letterSpacing: 0.1,
+    ),
+    labelMedium: GoogleFonts.plusJakartaSans(
+      fontSize: 12,
+      fontWeight: FontWeight.w500,
+      height: 1.33,
+      letterSpacing: 0.5,
+    ),
+    labelSmall: GoogleFonts.plusJakartaSans(
+      fontSize: 11,
+      fontWeight: FontWeight.w500,
+      height: 1.4545,
+      letterSpacing: 0.5,
+    ),
+    bodyLarge: GoogleFonts.plusJakartaSans(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      height: 1.5,
+      letterSpacing: 0.15,
+    ),
+    bodyMedium: GoogleFonts.plusJakartaSans(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      height: 1.42857,
+      letterSpacing: 0.25,
+    ),
+    bodySmall: GoogleFonts.plusJakartaSans(
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      height: 1.33,
+      letterSpacing: 0.4,
+    ),
   );
 }

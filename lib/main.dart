@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:poke_app/core/config/route.dart';
-import 'package:poke_app/core/config/route_names.dart';
 import 'package:poke_app/core/config/theme.dart';
 import 'package:poke_app/core/shared/screen/splash_screen.dart';
 
@@ -16,18 +15,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
+
   @override
   void initState() {
     super.initState();
-
-    // Redirect to home screen after 0.5 showed up
-    Future.delayed(
-      const Duration(milliseconds: 500),
-      () => Navigator.of(context).pushNamedAndRemoveUntil(
-        RouteNames.home,
-        (route) => false,
-      ),
-    );
   }
 
   @override
@@ -38,6 +30,7 @@ class _MyAppState extends State<MyApp> {
       themeMode: ThemeMode.light,
       theme: CustomTheme.lightTheme,
       debugShowCheckedModeBanner: false,
+      navigatorKey: _navigatorKey,
       home: const SplashScreen(),
     );
   }
